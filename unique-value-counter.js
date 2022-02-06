@@ -1,4 +1,5 @@
 const countUniqueValues = (array) => {
+  if (array.length === 0) return 0;
   let firstPointerIndex = 0;
   let secondPointerIndex = 1;
 
@@ -21,6 +22,7 @@ const countUniqueValues = (array) => {
 // console.log(countUniqueValues([1, 1, 1, 1, 1, 2, 5, 5]));
 
 const countUniqueValuesRefactored = (array) => {
+  if (array.length === 0) return 0;
   let i = 0;
   for (let j = 1; j < array.length; j++) {
     if (array[i] !== array[j]) {
@@ -32,3 +34,4 @@ const countUniqueValuesRefactored = (array) => {
 };
 
 console.log(countUniqueValuesRefactored([1, 1, 1, 1, 1, 2, 5, 5]));
+console.log(countUniqueValuesRefactored([]));
