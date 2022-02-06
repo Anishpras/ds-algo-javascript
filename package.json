@@ -1,0 +1,13 @@
+{
+  "name": "ds-algo-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Anishpras/ds-algo-javascript.git",
+  "author": "Anish Prashun <66175058+Anishpras@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node javascript/index.js",
+    "build": "tsc typescript/hello.ts --outDir javascript"
+  }
+}
