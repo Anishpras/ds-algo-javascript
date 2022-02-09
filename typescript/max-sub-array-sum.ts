@@ -1,4 +1,4 @@
-const maxSubArraySum = (array, num) => {
+const maxSubArraySum = (array:number[], num:number) => {
   let maxSum = 0;
   let tempSum = 0;
 
@@ -10,7 +10,7 @@ const maxSubArraySum = (array, num) => {
 
   tempSum = maxSum;
 
-  for (let i = num; i < array.length; i++) {
+  for (let i:number = num; i < array.length; i++) {
     tempSum = tempSum - array[i - num] + array[i];
     maxSum = Math.max(maxSum, tempSum);
   }
