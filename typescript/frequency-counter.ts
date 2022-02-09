@@ -16,11 +16,12 @@ const frequencyCounter = (arrayNumberOne, arrayNumberTwo) => {
   console.log(frequencyCounter2);
 
   for (let key in frequencyCounter1) {
+    //@ts-ignore
     if (!(key ** 2 in frequencyCounter2)) {
       console.log("Here it not matched");
       return false;
     }
-
+    //@ts-ignore
     if (frequencyCounter2[key ** 2] !== frequencyCounter1[key]) {
       console.log("Hey, not matched here.");
       return false;

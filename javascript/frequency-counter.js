@@ -14,10 +14,12 @@ var frequencyCounter = function (arrayNumberOne, arrayNumberTwo) {
     console.log(frequencyCounter1);
     console.log(frequencyCounter2);
     for (var key in frequencyCounter1) {
+        //@ts-ignore
         if (!(Math.pow(key, 2) in frequencyCounter2)) {
             console.log("Here it not matched");
             return false;
         }
+        //@ts-ignore
         if (frequencyCounter2[Math.pow(key, 2)] !== frequencyCounter1[key]) {
             console.log("Hey, not matched here.");
             return false;
