@@ -23,8 +23,8 @@
 //   return false;
 // };
 
-const areThereDuplicatesOneLiner = (...arguments) => {
-  return new Set(arguments).size !== arguments.length;
-};
+// const areThereDuplicatesOneLiner = (...arguments) => {
+//   return new Set(arguments).size !== arguments.length;
+// };
 
-console.log(areThereDuplicatesOneLiner(2, 3, 4, 2));
+// console.log(areThereDuplicatesOneLiner(2, 3, 4, 2));
