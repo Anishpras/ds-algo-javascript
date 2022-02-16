@@ -1,1 +1,1 @@
-# DS - Algo Using JavaScript
+# DS - Algo Using JavaScrip
