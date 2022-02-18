@@ -12,3 +12,12 @@ const productOfArray = (array: number[]) => {
 };
 
 console.log(productOfArray([1, 2, 3, 4, 5]));
+
+// Solution
+
+function productOfArraySolution(arr) {
+  if (arr.length === 0) {
+    return 1;
+  }
+  return arr[0] * productOfArraySolution(arr.slice(1));
+}
