@@ -1,7 +1,7 @@
-const productOfArray = (array) => {
+const productOfArray = (array: number[]) => {
   let result = 1;
 
-  const helper = (arr) => {
+  const helper = (arr: number[]) => {
     if (arr.length === 0) return;
 
     result *= arr[0];
