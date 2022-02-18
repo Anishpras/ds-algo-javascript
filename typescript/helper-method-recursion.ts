@@ -13,3 +13,4 @@ const collectOddValues = (arr: number[]) => {
   return result;
 };
 
+console.log(collectOddValues([4, 4, 2, 3, 1, 5, 7, 8, 9]));
