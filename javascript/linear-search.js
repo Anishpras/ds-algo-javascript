@@ -7,7 +7,7 @@ var linearSearch = function (array, value) {
     //   return -1;
     for (var item in array) {
         if (array[item] === value) {
-            return item;
+            return parseInt(item);
         }
     }
     return -1;
