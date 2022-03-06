@@ -21,4 +21,13 @@ var merge = function (array1, array2) {
     }
     return final;
 };
-console.log(merge([1, 3, 5, 8], [2, 7, 8, 9, 10]));
+var mergeSort = function (array) {
+    if (array.length <= 1) {
+        return array;
+    }
+    var mid = Math.floor(array.length / 2);
+    var left = mergeSort(array.slice(0, mid));
+    var right = mergeSort(array.slice(mid));
+    return merge(left, right);
+};
+console.log(mergeSort([1, 3, 5, 8, 34, 56, 78, 22, 3, 4, 7, 99]));

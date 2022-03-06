@@ -22,4 +22,14 @@ const merge = (array1, array2) => {
   return final;
 };
 
-console.log(merge([1, 3, 5, 8], [2, 7, 8, 9, 10]));
+const mergeSort = (array) => {
+  if (array.length <= 1) {
+    return array;
+  }
+  let mid = Math.floor(array.length / 2);
+  let left = mergeSort(array.slice(0, mid));
+  let right = mergeSort(array.slice(mid));
+  return merge(left, right);
+};
+
+console.log(mergeSort([1, 3, 5, 8, 34, 56, 78, 22, 3, 4, 7, 99]));
