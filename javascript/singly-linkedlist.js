@@ -43,16 +43,16 @@ class SinglyLinkedList {
     return current;
   }
 
-  //   shift() {
-  //     if (!this.head) return undefined;
-  //     let currentHead = this.head;
-  //     this.head = currentHead.next;
-  //     this.length--;
-  //     if (this.length === 0) {
-  //       this.tail = null;
-  //     }
-  //     return currentHead;
-  //   }
+    shift() {
+      if (!this.head) return undefined;
+      let currentHead = this.head;
+      this.head = currentHead.next;
+      this.length--;
+      if (this.length === 0) {
+        this.tail = null;
+      }
+      return currentHead;
+    }
 
   //   unshift(value) {
   //     const newNode = new Node(value);
