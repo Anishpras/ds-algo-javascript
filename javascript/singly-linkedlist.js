@@ -25,23 +25,23 @@ class SinglyLinkedList {
     return this;
   }
 
-  //   pop() {
-  //     if (!this.head) return undefined;
-  //     let current = this.head;
-  //     let newTail = current;
-  //     while (current.next) {
-  //       newTail = current;
-  //       current = current.next;
-  //     }
-  //     this.tail = newTail;
-  //     this.tail.next = null;
-  //     this.length--;
-  //     if (this.length === 0) {
-  //       this.head = null;
-  //       this.tail = null;
-  //     }
-  //     return current;
-  //   }
+  pop() {
+    if (!this.head) return undefined;
+    let current = this.head;
+    let newTail = current;
+    while (current.next) {
+      newTail = current;
+      current = current.next;
+    }
+    this.tail = newTail;
+    this.tail.next = null;
+    this.length--;
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+    return current;
+  }
 
   //   shift() {
   //     if (!this.head) return undefined;
@@ -86,4 +86,4 @@ let first = new SinglyLinkedList();
 first.push("a");
 first.push("b");
 first.push("c");
-console.log(first)
+console.log(first);
