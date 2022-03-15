@@ -79,7 +79,12 @@ class SinglyLinkedList {
   }
 
   set(index, value) {
-    let foundNode = this;
+    const foundNode = this.get(index);
+    if (foundNode) {
+      foundNode.value = value;
+      return true;
+    }
+    return false;
   }
 }
 let first = new SinglyLinkedList();
