@@ -33,7 +33,6 @@ class DoublyLinkedList {
     if (this.length === 1) {
       this.head = null;
       this.tail = null;
-      return currentTail;
     } else {
       this.tail = currentTail.prev;
       this.tail.next = null;
@@ -49,7 +48,6 @@ class DoublyLinkedList {
     if (this.length === 1) {
       this.head = null;
       this.tail = null;
-      return oldHead;
     } else {
       this.head = oldHead.next;
       this.head.prev = null;
