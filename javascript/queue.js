@@ -16,11 +16,10 @@ class Queue {
     const newNode = new Node(value);
     if (!this.first) {
       this.first = newNode;
-      this.last = this.first;
+      this.last = newNode;
     } else {
-      let temp = this.first;
-      this.first = newNode;
-      this.first.next = temp;
+     this.last.next= newNode;
+     this.last = newNode;
     }
 
     return ++this.size;
@@ -28,7 +27,7 @@ class Queue {
 
   dequeue() {
     if (!this.first) return null;
-    var temp = this.first;
+    let temp = this.first;
     if (this.first === this.last) {
       this.last = null;
     }
