@@ -50,6 +50,7 @@ class BinarySearchTree {
       } else {
         found = true;
       }
+      if (!found) return undefined;
       return current;
     }
   }
